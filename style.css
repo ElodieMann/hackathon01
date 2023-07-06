@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+}
+
+.fa.fa-arrow-circle-up {
+  font-size: 5rem;
+  position: fixed;
+  top: 80vh;
+  left: 85vw;
+  color: rgba(19, 56, 65, 1);
+}
+
+nav,
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 15vh;
+  padding: 0 25px;
+}
+
+
+.navLogo {
+  height: 100%;
+}
+
+
+#menu {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding-right: 20px;
+  width: 75%;
+}
+
+#menuHamburger {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  cursor: pointer;
+  color: brown;
+}
+
+main {
+  background-color: rgba(19, 56, 65, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-bottom: 80px;
+}
+
+h1 {
+  height: 45%;
+  width: 100%;
+  color: white;
+  font-size: 2.5rem;
+  line-height: 80px;
+  text-transform: capitalize;
+  padding: 10px 50px;
+}
+
+main img {
+  width: 65%;
+}
+
+#how,
+#concept,
+#contact,
+#log {
+  text-align: justify;
+  margin: 0 10%;
+  margin-bottom: 150px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+#concept img {
+  float: right;
+  width: 40%;
+}
+
+.contactForm {
+  display: grid;
+  grid-template-areas:
+    "a b"
+    "c d"
+    "e f"
+    "g g"
+    "h h ";
+  gap: 25px;
+}
+
+#fullname {
+  display: none;
+}
+
+#name {
+  grid-area: a;
+}
+#firstname {
+  grid-area: b;
+}
+#age {
+  grid-area: c;
+}
+#nationality {
+  grid-area: d;
+}
+#tel {
+  grid-area: e;
+}
+#email {
+  grid-area: f;
+}
+#message {
+  grid-area: g;
+}
+#btn1 {
+  grid-area: h;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+label {
+  font-weight: bolder;
+}
+
+input,
+textarea {
+  height: 45px;
+  background-color: #1338414d;
+  border-style: none;
+  color: #133841;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+textarea {
+  height: auto;
+}
+
+.btn {
+  width: 20%;
+  margin: 0 auto;
+  background-color: rgba(19, 56, 65, 1);
+  border-radius: 20px;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+}
+
+.formFlex2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.formLog {
+  display: flex;
+  gap: 50px;
+  width: 100%;
+  flex-direction: column;
+}
+
+.formLog div {
+  width: 100%;
+}
+
+#dndApp {
+  margin-top: 100px;
+}
+
+#link, span {
+  color: red;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+footer {
+  background-color: rgba(19, 56, 65, 1);
+}
+
+#textFooter {
+  color: white;
+  margin-right: 20px;
+}
+
+#textFooter a {
+  color: white;
+}
+#textFooter a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+
+  .fa.fa-arrow-circle-up {
+    font-size: 2rem; 
+
+  }
+  #menuHamburger {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 5px;
+    margin-right: 20px;
+  }
+
+  #menuHamburger li {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    border-radius: 40px;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  main img {
+    width: 100%;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  .contactForm,
+  .formLog {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 50%;
+    font-size: 0.7rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  footer {
+    gap: 30px;
+  }
+}

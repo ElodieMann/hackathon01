@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OLIM HELP</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+ 
+    <a href="#"><i class="fa fa-arrow-circle-up""></i></a>
+
+    <nav>
+      <img class="navLogo" src="./assets/nav-logo.png" alt="logo" />
+      <ul id="menu">
+        <li><a href="#how">HOW IT WORKS</a></li>
+        <li><a href="#concept">CONCEPT</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#log">LOG IN</a></li>
+      </ul>
+      <ul id="menuHamburger">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>Find a job in Israel through our services for Olim Hadashim</h1>
+      <img src="./assets/desk.png" alt="desk picture" />
+    </main>
+
+    <div id="how">
+      <h2>HOW IT WORKS</h2>
+      <p>
+        Welcome to our mutual assistance online platform dedicated to supporting
+        new immigrants in Israel! We firmly believe in the power of mutual aid
+        and solidarity to foster successful integration in this vibrant country.
+        Our goal is to provide you with an online space where you can benefit
+        from the mutual support of the immigrant community. <br /><br />
+        On our site, you will find a wealth of resources and tools to help you
+        find employment that aligns with your skills and experience. Our
+        community consists of individuals who share the same challenges as you
+        and are ready to share their knowledge, advice, and contacts. We believe
+        that each of us has something valuable to offer and receive.
+        <br /><br />
+        By using our platform, you can interact with other members, ask
+        questions, share job opportunities, and even participate in mentorship
+        programs to accelerate your professional integration. Whether you need
+        assistance with CV writing, understanding the Israeli job market, or
+        establishing connections with potential employers, our community will be
+        there to support you at every step of your journey. <br /><br />
+        Together, we can break down barriers and create a strong support network
+        that facilitates your professional success in Israel. Join us now and
+        become part of this caring community where we grow together by sharing
+        our knowledge and experience. <br /><br />
+        Remember: your success is our success. Together, we can achieve great
+        things!
+      </p>
+    </div>
+
+    <div id="concept">
+      <h2>CONCEPT</h2>
+      <img src="./assets/hands.png" alt="hands" />
+      <p>
+        Our platform dedicated to mutual assistance among new immigrants is your
+        ultimate ally for successful integration in Israel. With our application
+        featuring an integrated chat, you can easily connect with other members,
+        share experiences, and offer or receive valuable advice. <br /><br />
+        Our goal is to create a supportive community where every new immigrant
+        can find the assistance they need. Whether you're seeking employment,
+        looking to enhance your CV, or seeking insights into the job market in
+        Israel, our integrated chat allows direct communication with experienced
+        and caring members. <br /><br />
+        You can share your CV to receive constructive feedback, exchange ideas
+        about job opportunities, discuss specific challenges you're facing, and
+        obtain practical guidance to navigate your professional journey in
+        Israel. <br /><br />
+        Our platform fosters mutual assistance by connecting individuals who
+        share common challenges and aspirations. We actively encourage members
+        to offer their experiences and knowledge to help others succeed in their
+        transition to a new life in Israel. <br /><br />
+        Whether you're a new immigrant or have already established your career,
+        your participation on our platform is invaluable. Together, we can build
+        a dynamic, supportive, and compassionate community where everyone finds
+        inspiration, support, and the necessary guidance to achieve their
+        professional goals. <br /><br />
+        Download our application now and join our mutual assistance community to
+        be part of a collective journey where we grow together towards a
+        brighter future.
+      </p>
+    </div>
+
+    <div id="contact">
+      <h2>CONTACT US</h2>
+      <form action="" class="contactForm">
+        <div id="name">
+          <label for="name">Name* : </label>
+          <input type="text" name="name" required />
+        </div>
+        <div id="firstname">
+          <label for="firstname">Firstname : </label>
+          <input type="text" name="firstname" />
+        </div>
+        <div id="age">
+          <label for="age">Age *: </label>
+          <input type="number" name="age" min="18" max="65" required />
+        </div>
+        <div id="nationality">
+          <label for="nationality">Nationality* : </label>
+          <input type="text" name="nationality" required />
+        </div>
+        <div id="tel">
+          <label for="tel">Tel* : </label>
+          <input type="tel" name="tel" required maxlength="10" />
+        </div>
+        <div id="email">
+          <label for="email">Email : </label>
+          <input type="email" name="email" />
+        </div>
+        <div id="message">
+          <label for="message">Message* : </label>
+          <textarea name="message" id="" cols="30" rows="10"></textarea>
+        </div>
+        <input type="submit" value="SEND" class="btn" id="btn1" />
+      </form>
+    </div>
+
+    <div id="log">
+      <h2 id="login">LOG IN</h2>
+      <div class="formFlex2">
+        <form class="formLog">
+          <div id="fullname">
+            <label for="fullname">FullName* : </label>
+            <input type="text" name="fullname" required />
+          </div>
+          <div>
+            <label for="email">Email* : </label>
+            <input type="email" name="email" required />
+          </div>
+          <div>
+            <label for="password">Password* : </label>
+            <input type="password" name="password" required />
+          </div>
+        </form>
+        <h3 id="subtitle" onclick="toggle()">
+          Not registered? Tap to <span id="link">Sign In</span> and start
+          exploring!
+        </h3>
+        <input type="submit" value="REGISTER" class="btn" />
+
+        <h3 id="dndApp">
+          Download <a href="https://www.apple.com/app-store/" target="_blank"><span>our app</span></a> now and streamline your professional
+          integration in Israel!
+        </h3>
+      </div>
+    </div>
+
+    <footer>
+      <img class="navLogo" src="./assets/footer-logo.png" alt="logo" />
+      <p id="textFooter">
+        © Olim Help 2023. All rights reserved. | <a href="">Terms of Use</a> |
+        <a href="">Privacy Policy</a> |
+        <a href="">Contact Us</a>
+      </p>
+    </footer>
+
+    <script>
+      function toggle() {
+        let link = document.getElementById("link");
+        let subtitle = document.getElementById("subtitle");
+        let login = document.getElementById("login");
+        let fullName = document.getElementById("fullname");
+        // let flexForm = document.getElementsByClassName('formLog')
+        if (link.innerHTML === "Sign In") {
+          link.innerHTML = "Log In";
+          login.innerHTML = "SIGN IN";
+          fullName.style.display = "flex";
+          // flexForm.style.flexDirection = "column";
+          subtitle.innerHTML =
+            "Already a memner Tap to <span id='link'>Log in</span> and start exploring!";
+        } else {
+          link.innerHTML = "Sign In";
+          login.innerHTML = "LOG IN";
+          fullName.style.display = "none";
+          subtitle.innerHTML =
+            "Not registered? Tap to <span id='link'>Sign In</span> and start exploring!";
+        }
+      }
+    </script>
+  </body>
+</html>
